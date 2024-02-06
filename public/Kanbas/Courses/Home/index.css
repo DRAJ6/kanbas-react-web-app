@@ -1,5 +1,5 @@
 .wd-main-account-container {
-   display:flex;
+    display:flex;
 }
 
 
@@ -164,7 +164,7 @@
 }
 
 
-/*test*/
+/test/
 .wd-edit-profile-action-button{
     background-color: lightgrey;
     border: 1px solid lightgrey;
@@ -339,4 +339,61 @@ th{
 }
 .wd-box-submission-type {
     border: 1px solid darkgrey;width: inherit;height: auto;padding: 20px;
+}
+
+
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* Small screens (phones) */
+@media only screen and (max-width: 767px) {
+    /* Styles for small screens go here */
+    .modal-dialog {
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .no-show-mobile {
+        display: none;
+    }
+    .nav-pane {
+        width: 0% !important;
+        display: none;
+    }
+    .main-content-pane {
+        width: 100%  !important;
+    }
+    .status-pane {
+        width: 0%  !important;
+        display: none;
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    /* Styles for medium screens go here */
+    .nav-pane {
+        width: 30% !important;
+    }
+    .main-content-pane {
+        width: 70% !important;
+    }
+    .status-pane {
+        width: 0% !important;
+    }
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1200px) {
+    /* Styles for large screens go here */
+    .nav-pane {
+        width: 20% !important;
+    }
+    .main-content-pane {
+        width: 50% !important;
+    }
+    .status-pane {
+        width: 30% !important;
+    }
 }
