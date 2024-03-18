@@ -31,11 +31,11 @@ function Dashboard() {
                                 <div className="card-body">
                                     <Link className="card-title wd-card-title" to={`/Kanbas/Courses/${course._id}/Home`}
                                         style={{ textDecoration: "none", color: "navy", fontWeight: "bold" }}>
-                                            <p className="wd-nowrap" style={{marginBottom: "2px"}}>{course.name}</p>
+                                            <p className="wd-nowrap" style={{marginBottom: "2px", color: "red"}}>{course.name}</p>
                                     </Link>
                                     <p className="card-text wd-nowrap" style={{marginBottom: "2px"}}>{course.number}</p>
                                     <p className="card-text wd-nowrap" style={{marginBottom: "2px", fontSize: "smaller"}}>{course.semester}</p>
-                                    <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn" style={{fontSize: "25px", border: "0", padding: "0"}}><FaRegEdit /></Link>
+                                    <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn" style={{color: "blue",fontSize: "35px", border: "0", padding: "0"}}><FaRegEdit /></Link>
                                 </div>
                             </div>
                         </div>

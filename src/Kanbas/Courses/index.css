@@ -4,6 +4,13 @@
     text-overflow: ellipsis;
 }
 
+.card-body {
+    text-align: end !important;
+    color: red !important;
+}
+.card-body > p {
+    color: red !important;
+}
 .wd-three-bar-menu {
     color: red; 
     background-color: white; 
