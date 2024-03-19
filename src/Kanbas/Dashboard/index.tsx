@@ -25,17 +25,17 @@ function Dashboard() {
             <div className="row wd-dashboard-component">
                 <div className="row row-cols-1 row-cols-md-5 g-4">
                     {courses.map((course) => (
-                        <div key={course._id} className="col wd-course-card-col" style={{ width: 300 }}>
+                        <div key={course._id} className="col wd-course-card-col" style={{ width: 350 }}>
                             <div className="card">
-                                <img src={`/images/${course.image}`} className="card-img-top wd-card-image" style={{ height: 150 }} alt="course card"/>
+                                <img src={`/images/${course.image}`} className="card-img-top wd-card-image" style={{ height: 400 }} alt="course card"/>
                                 <div className="card-body">
                                     <Link className="card-title wd-card-title" to={`/Kanbas/Courses/${course._id}/Home`}
                                         style={{ textDecoration: "none", color: "navy", fontWeight: "bold" }}>
-                                            <p className="wd-nowrap" style={{marginBottom: "2px", color: "red"}}>{course.name}</p>
+                                            <p className="wd-nowrap" style={{marginBottom: "2px", color: "blue"}}>{course.name}</p>
                                     </Link>
-                                    <p className="card-text wd-nowrap" style={{marginBottom: "2px"}}>{course.number}</p>
-                                    <p className="card-text wd-nowrap" style={{marginBottom: "2px", fontSize: "smaller"}}>{course.semester}</p>
-                                    <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn" style={{color: "blue",fontSize: "35px", border: "0", padding: "0"}}><FaRegEdit /></Link>
+                                    <p className="card-text wd-nowrap" style={{marginBottom: "2px", color:"green"}}>{course.number}</p>
+                                    <p className="card-text wd-nowrap" style={{marginBottom: "2px", fontSize: "smaller", color:"blue"}}>{course.semester}</p>
+                                    <Link to={`/Kanbas/Courses/${course._id}/Home`} className="btn" style={{color: "blue",fontSize: "30px", border: "0", padding: "0"}}><FaRegEdit /></Link>
                                 </div>
                             </div>
                         </div>

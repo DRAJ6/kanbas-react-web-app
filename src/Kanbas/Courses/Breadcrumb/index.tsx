@@ -24,7 +24,7 @@ function Breadcrumb() {
                 <div className="row m-0">
                     <nav className="navbar wd-breadcrumb-navbar" aria-label="Small site nav bar">
                         <div className="container-fluid">
-                            <button className="wd-three-bar-menu" onClick={() => enableCourseNav()}><HiMiniBars3 /></button>
+                            <button className="wd-three-bar-menu" onClick={() => enableCourseNav()}><HiMiniBars3 size={25} /></button>
                             <GetBreadcrumb/>
                             <button className="btn btn-light btn-outline-dark" style={{marginTop: "14px"}}>
                                 <i className="fa-solid fa-glasses"></i> Student View
