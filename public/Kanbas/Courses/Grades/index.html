@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grades</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d75b05e166.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/Kanbas/styles.css"/>
+        <link rel="stylesheet" href="/Kanbas/Navigation/index.css"/>
+        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css"/>
+        <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css"/>
+        <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css"/>
+
+        <meta name="viewport" wd-content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container-fluid wd-main-container">
+            <div class="row">
+                <!-- Column 2b: Grade section. Is always visible, no matter the screen size. -->
+                <div class="col-sm-12 col-md-11 col-lg-11 col-xl-11 wd-always-vis-col">
+                    <!-- Grade header row 1 with Import, Export, and Gear icon buttons. -->
+                    <button type="button" class="wd-float-right wd-rounded-corners-all-around wd-home-button wd-margin-5px"><i class="fa-solid fa-gear"></i></button>
+                    <button type="button" class="wd-float-right wd-rounded-corners-all-around wd-home-button wd-margin-5px"><i class="fa-solid fa-file-export"></i> Export</button>
+                    <button type="button" class="wd-float-right wd-rounded-corners-all-around wd-home-button wd-margin-5px"><i class="fa-solid fa-file-import"></i> Import</button>
+                    <div class="wd-float-done"></div>
+
+                    <!-- Grade header row 2 with drop-down menus. -->
+                    <div class="row">
+                        <div class="col-sm">
+                            <label for="studentList" class="form-label">Student Names</label>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa-solid fa-magnifying-glass wd-magnifying-glass"></i></div>
+                                <input type="text" class="form-control wd-search-dropdown" id="studentList" list="studentlistOptions" placeholder="Search Students">
+                                <div class="input-group-text wd-dropdown-angle" list="studentlistOptions"><i class="fa-solid fa-angle-down"></i></div>
+                            </div>
+                            <datalist id="studentlistOptions">
+                                <option value="Alice Wonderland">
+                                <option value="Princess Leia">
+                                <option value="Luke Skywalker">
+                                <option value="Han Solo">
+                                <option value="Lando Calresian">
+                                <option value="Boba Fet">
+                                <option value="Darth Vader">    
+                                <option value="Obi-Wan Kenobi">
+                                <option value="R2-D2">
+                                <option value="C-3PO">
+                                <option value="Yoda">
+                                <option value="Admiral Ackbar">
+                            </datalist>
+                        </div>
+                        <div class="col-sm">
+                            <label for="assignmentList" class="form-label">Assignment Names</label>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa-solid fa-magnifying-glass wd-magnifying-glass"></i></div>
+                                <input type="text" class="form-control wd-search-dropdown" id="assignmentList" list="assignmentlistOptions" placeholder="Search Assignments">
+                                <div class="input-group-text wd-dropdown-angle" list="studentlistOptions"><i class="fa-solid fa-angle-down"></i></div>
+                            </div>
+                            <datalist id="assignmentlistOptions">
+                                <option value="A1 SETUP">
+                                <option value="A2 HTML">
+                                <option value="A3 CSS">
+                                <option value="A4 BOOTSTRAP">
+                                <option value="A5 JAVASCRIPT">
+                                <option value="A6 REACT">
+                                <option value="A7 REDUX">    
+                                <option value="A8 NODE">
+                                <option value="A9 MONGO">
+                            </datalist>
+                        </div>
+                    </div>
+
+                    <!-- Grade header row 3 with Apply Filters button. -->
+                    <button class="wd-rounded-corners-all-around wd-grade-button wd-apply-filters-button"><i class="fa-solid fa-filter"></i> Apply Filters</button>
+
+                    <!-- Grade table. -->
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover" aria-describedby="gradeTable">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Student Name</th>
+                                    <th class="wd-table-header">A1 SETUP<br/><span class="wd-notbold">Out of 100</span></th>
+                                    <th class="wd-table-header">A2 HTML<br/><span class="wd-notbold">Out of 100</span></th>
+                                    <th class="wd-table-header">A3 CSS<br/><span class="wd-notbold">Out of 100</span></th>
+                                    <th class="wd-table-header">A4 BOOTSTRAP<br/><span class="wd-notbold">Out of 100</span></th>
+                                    <th class="wd-table-header">A5 JAVASCRIPT<br/><span class="wd-notbold">Out of 100</span></th>
+                                    <th class="wd-table-header">A6 REACT<br/><span class="wd-notbold">Out of 100</span></th>
+                                    <th class="wd-table-header">A7 REDUX<br/><span class="wd-notbold">Out of 100</span></th>
+                                    <th class="wd-table-header">A8 NODE<br/><span class="wd-notbold">Out of 100</span></th>
+                                    <th class="wd-table-header">A9 MONGO<br/><span class="wd-notbold">Out of 100</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- I am assuming that assignments cannot be less than 1 point and since all of these example assignments are 100 points,
+                                    I am making it so they cannot be given points higher than 100. So in this case, no extra credit. -->
+                                <tr>
+                                    <td><a href="#" class="wd-student-name">Alice Wonderland</a></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="98" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="89" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="87" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="90" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="89" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="94" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="88" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="87" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="100" size="4" type="number" min="1" max="100"/></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="wd-student-name">Princess Leia</a></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="98" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="80" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="87" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="86" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="100" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="94" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="85" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="84" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="85" size="4" type="number" min="1" max="100"/></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="wd-student-name">Luke Skywalker</a></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="99" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="88" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="97" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="82" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="96" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="93" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="95" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="100" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="93" size="4" type="number" min="1" max="100"/></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="wd-student-name">Han Solo</a></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="83" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="99" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="94" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="98" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="86" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="85" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="86" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="80" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="84" size="4" type="number" min="1" max="100"/></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="wd-student-name">Lando Calresian</a></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="83" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="92" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="80" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="80" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="92" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="92" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="94" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="87" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="95" size="4" type="number" min="1" max="100"/></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="wd-student-name">Boba Fet</a></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="85" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="89" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="94" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="83" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="83" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="84" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="91" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="87" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="96" size="4" type="number" min="1" max="100"/></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="wd-student-name">Darth Vader</a></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="81" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="81" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="96" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="80" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="89" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="88" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="82" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="80" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="82" size="4" type="number" min="1" max="100"/></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="wd-student-name">Obi-Wan Kenobi</a></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="85" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="99" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="87" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="82" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="88" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="83" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="88" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="92" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="80" size="4" type="number" min="1" max="100"/></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="wd-student-name">R2-D2</a></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="81" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="92" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="82" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="86" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="83" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="84" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="98" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="85" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="96" size="4" type="number" min="1" max="100"/></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="wd-student-name">C-3PO</a></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="94" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="98" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="83" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="83" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="100" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="96" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="96" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="85" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="87" size="4" type="number" min="1" max="100"/></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="wd-student-name">Yoda</a></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="80" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="89" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="99" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="89" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="96" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="85" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="96" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="92" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="85" size="4" type="number" min="1" max="100"/></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="wd-student-name">Admiral Ackbar</a></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="82" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="88" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="95" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="100" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="93" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="98" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="85" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="87" size="4" type="number" min="1" max="100"/></td>
+                                    <td class="wd-table-cell"><input class="wd-table-cell" value="99" size="4" type="number" min="1" max="100"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

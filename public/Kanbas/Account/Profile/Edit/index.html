@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Edit Profile</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d75b05e166.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/Kanbas/styles.css"/>
+        <link rel="stylesheet" href="/Kanbas/Navigation/index.css"/>
+        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css"/>
+        <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css"/>
+        <link rel="stylesheet" href="/Kanbas/Account/Profile/index.css"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container-fluid wd-main-container">
+            <div class="row">
+                <!-- Column 2b: Edit section. Is always visible, no matter the screen size. -->
+                <div class="col-sm-12 col-md-11 col-lg-11 col-xl-11 wd-always-vis-col-profile">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="wd-flex-container">
+                                <div class="wd-flex-item-left">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#avatarModal" class="wd-user-avatar">
+                                        <i class="fa-regular fa-circle-user fa-5x"></i> 
+                                    </button>
+                                </div>
+                                <div class="wd-flex-item-right">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="studentName" class="form-label"><b>Name:*</b></label>
+                                            <input type="text" class="form-control" id="studentName" value="Elizabeth Williams" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="pronouns" class="form-label" ><b>Pronouns:</b></label>
+                                            <select class="form-select" name="pronouns" id="pronouns">
+                                                <option value="">None</option>
+                                                <option value="He/Him">He/Him</option>
+                                                <option value="She/Her">She/Her</option>
+                                                <option value="They/Them">They/Them</option>
+                                                <option value="He/They">He/They</option>
+                                                <option value="She/They">She/They</option>
+                                                <option value="He/She/They">He/She/They</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="text-fields-title" class="form-label"><b>Title:</b></label>
+                                            <input type="text" class="form-control" id="text-fields-title">
+                                        </div>
+                                        <div class="mb-3">
+                                            <h4>Contact</h4>
+                                            <p>No registered services, you can add some on the <a class="wd-profile-hyperlink" href="/Kanbas/Account/Settings/CourseDetails/screen.html">settings</a> page.</p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <h4>Biography</h4>
+                                            <textarea class="form-control" id="biography" rows="6"></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <h4 class="mb-0">Links</h4>
+                                            <div class="row g-2">
+                                                <div class="col-sm wd-link-header">
+                                                    <label for="linkTitle" class="form-label">Title</label>
+                                                </div>
+                                                <div class="col-sm wd-link-header">
+                                                    <label for="linkUrl" class="form-label">URL</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" aria-label="title1">
+                                                <span class="input-group-text"><i class="fa-solid fa-arrow-right"></i></span>
+                                                <input type="text" class="form-control" aria-label="url1">
+                                                <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i class="fa-solid fa-x wd-cancel-link"></i></button>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" aria-label="title2">
+                                                <span class="input-group-text"><i class="fa-solid fa-arrow-right"></i></span>
+                                                <input type="text" class="form-control" aria-label="url2">
+                                                <button class="btn btn-outline-secondary" type="button" id="button-addon1"><i class="fa-solid fa-x wd-cancel-link"></i></button>
+                                            </div>
+                                            <button type="button" class="wd-rounded-corners-all-around wd-home-button" onclick="window.location.href='#'">Add another link</button>
+                                        </div>
+                                        <hr/>
+                                        <br/>
+
+                                        <button type="button" class="wd-rounded-corners-all-around wd-save-button-profile float-end" onclick="window.location.href='/Kanbas/Account/Profile/screen.html';">Save Profile</button>
+                                        <button type="button" class="wd-rounded-corners-all-around wd-cancel-button-profile float-end" onclick="window.location.href='/Kanbas/Account/Profile/screen.html';">Cancel</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div>
+                                <button type="button" class="wd-rounded-corners-all-around wd-home-button" onclick="window.location.href='/Kanbas/Account/Profile/screen.html'"><img src="/Kanbas/Account/Profile/pencil_icon.png" alt="pencil icon" width="15px" height="15px"> Cancel Editing</button>
+                            </div>
+                        </div>
+
+                        <!-- Profile modal. -->
+                        <div class="modal fade" id="avatarModal" tabindex="-1" aria-labelledby="avatarModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content wd-content-nav">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Select Profile Picture</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <label for="profilePic" class="form-label">Upload a Picture</label>
+                                    <input class="form-control" type="file" id="profilePic" accept="image/*">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

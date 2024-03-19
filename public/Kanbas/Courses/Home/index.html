@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d75b05e166.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/Kanbas/styles.css"/>
+        <link rel="stylesheet" href="/Kanbas/Navigation/index.css"/>
+        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css"/>
+        <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css"/>
+
+        <meta name="viewport" wd-content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container-fluid wd-main-container">
+            <div class="row">
+                <!-- Column 2b: Weekly Modules. Is always visible, no matter the screen size. -->
+                <div class="col-sm-12 col-md-11 col-lg-11 col-xl-8 wd-always-vis-col">
+                    <!-- Buttons above the weeks. -->
+                    <button type="button" class="wd-float-right wd-rounded-corners-all-around wd-home-button wd-margin-5px">&#8285</button>
+                    <button type="button" class="wd-float-right wd-rounded-corners-all-around wd-home-button wd-module-plus"><i class="fa-solid fa-plus"></i> Module</button>
+                    <div class="wd-float-right dropdown">
+                        <button class="btn btn-secondary dropdown-toggle wd-course-status-dropdown" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-regular fa-circle-check wd-green-icon"></i> Publish All</button>
+                        <ul class="dropdown-menu dropdown-menu-end wd-max-content-width" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-check wd-green-icon"></i> Publish all modules and items</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-check wd-green-icon"></i> Publish modules only</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-ban wd-grey-icon"></i> Unpublish all modules and items</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="wd-float-right wd-rounded-corners-all-around wd-home-button wd-margin-5px">View Progress</button>
+                    <button type="button" class="wd-float-right wd-rounded-corners-all-around wd-home-button wd-margin-5px">Collapse All</button>
+                    <div class="wd-float-done"></div>
+                    <hr/>
+
+                    <div class="wd-week-section">
+                        <button draggable="true" type="button" class="wd-collapsible border border-dark">
+                            <p class="wd-left-text m-0">
+                                <i class="fa-solid fa-grip-vertical"></i>
+                                <i class="fa-solid fa-caret-down"></i> Week 0 - INTRO
+                                <span class="float-end">
+                                    <i class="fa-solid fa-circle-check wd-green-icon"></i>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </span>
+                            </p>
+                        </button>
+
+                        <div class="wd-content">
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical"></i> LEARNING OBJECTIVES
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> Introduction to the course
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> Learn what is Web Development
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> Creating a development environment
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> Creating a Web Application
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> Getting started with the 1st assignment
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical"></i> READING
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> Full Stack Developer - Chapter 1 - Introduction
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical"></i> SLIDES
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> <a class="wd-hyperlinks" href="#">Introduction to Web Development <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> <a class="wd-hyperlinks" href="#">Creating an HTTP server with Node.js <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> <a class="wd-hyperlinks" href="#">Creating a React Application <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wd-week-section">
+                        <button draggable="true"  type="button" class="wd-collapsible border border-dark">
+                            <p class="wd-left-text m-0">
+                                <i class="fa-solid fa-grip-vertical"></i>
+                                <i class="fa-solid fa-caret-down"></i> Week 1 - HTML
+                                <span class="float-end">
+                                    <i class="fa-solid fa-circle-check wd-green-icon"></i>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </span>
+                            </p>
+                        </button>
+
+                        <div class="wd-content">
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical"></i> LEARNING OBJECTIVES
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> Learn how to create user interfaces with HTML
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> Keep working on assignment 1
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> Deploy the assignment to Netlify
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical"></i> READING
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> Full Stack Developer - Chapter 1 - Introduction
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                            <div draggable="true" class="row border border-dark wd-draggable-item">
+                                <p class="wd-week">
+                                    <i class="fa-solid fa-grip-vertical wd-icon-indentation-week"></i> Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML
+                                    <span class="float-end">
+                                        <i class="fa-solid fa-circle-check wd-check-mark"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3b: Course Status, To Do, and Coming Up. Hide on screens smaller than extra large. -->
+                <div class="col-xl-3 d-none d-xl-block">  
+                    <!-- Course Status Section. -->  
+                    <h3>Course Status</h3>
+                    <div class="list-group list-group-horizontal">
+                        <a href="#" class="list-group-item list-group-item-action w-100 wd-course-status-button"><i class="fa-solid fa-ban"></i> Unpublish</a>
+                        <a href="#" class="list-group-item list-group-item-action w-100 wd-course-status-button"><i class="fa-regular fa-circle-check"></i> Published</a>
+                    </div>
+
+                    <p></p>
+
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action wd-course-status-button"><i class="fa-solid fa-file-import"></i> Import Existing Content</a>
+                        <a href="#" class="list-group-item list-group-item-action wd-course-status-button"><i class="fa-solid fa-right-from-bracket"></i> Import From Commons</a>
+                        <a href="#" class="list-group-item list-group-item-action wd-course-status-button"><i class="fa-solid fa-crosshairs"></i> Choose Home Page</a>
+                        <a href="#" class="list-group-item list-group-item-action wd-course-status-button"><i class="fa-solid fa-chart-simple"></i> View Course Stream</a>
+                        <a href="#" class="list-group-item list-group-item-action wd-course-status-button"><i class="fa-solid fa-bullhorn"></i> New Announcement</a>
+                        <a href="#" class="list-group-item list-group-item-action wd-course-status-button"><i class="fa-solid fa-chart-simple"></i> New Analytics</a>
+                        <a href="#" class="list-group-item list-group-item-action wd-course-status-button"><i class="fa-regular fa-bell"></i> View Course Notifications</a>
+                    </div>
+
+                    <p></p>
+
+                    <!-- To Do Section. -->
+                    <div class="row">
+                        <div class="col">
+                            <h3>To Do</h3>
+                        </div>
+                    </div>
+                    <div class="row"><hr/></div>
+                    <div class="row wd-coming-up-todo-row">
+                        <a class="wd-hyperlinks" href="/Kanbas/Courses/Assignments/Edit/screen.html"><i class="fa-solid fa-calendar-check wd-to-do-assignment"></i>Grade A1 - ENV + HTML</a>
+                        <p class="wd-subheader-to-do">100 points • Sep 18 at 11:59pm</p>
+                    </div>
+
+                    <p></p>
+
+                    <!-- Coming Up Section. -->
+                    <div class="row">
+                        <div class="col">
+                            <h3>Coming Up</h3>
+                        </div>
+                        <div class="col">
+                            <h6>
+                                <a class="wd-hyperlinks" href="/Kanbas/Calendar/index.html"><i class="fa-regular fa-calendar wd-calendar"></i> View Calendar</a>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="row"><hr/></div>
+                    <div class="row wd-coming-up-todo-row">
+                        <a class="wd-hyperlinks" href="#"><i class="fa-regular fa-calendar wd-calendar"></i>Lecture</a>
+                        <p class="wd-subheader-coming-up">CS4500.12631.202410 Sep 11 at 11:45am</p>
+                    </div>
+                    <div class="row wd-coming-up-todo-row">
+                        <a class="wd-hyperlinks" href="#"><i class="fa-regular fa-calendar wd-calendar"></i>CS5610 06 SP23 Lecture</a>
+                        <p class="wd-subheader-coming-up">CS4500.12631.202410 Sep 11 at 6pm</p>
+                    </div>
+                    <div class="row wd-coming-up-todo-row">
+                        <a class="wd-hyperlinks" href="#"><i class="fa-regular fa-calendar wd-calendar"></i>CS5610 Web Development Summer 1 2023 Lecture</a>
+                        <p class="wd-subheader-coming-up">CS4500.12631.202410 Sep 11 at 7pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </body>  
+</html>
