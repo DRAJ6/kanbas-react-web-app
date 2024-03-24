@@ -25,7 +25,11 @@
     background-color: rgba(254, 254, 254, 0.97);
 }
 
+.wd-dashboard-component > input {
+    background-color: lightblue;
+}
 .wd-dashboard-component {
+
     padding-top: 10px;
     margin-left: 15px;
     padding-left: 20px;
