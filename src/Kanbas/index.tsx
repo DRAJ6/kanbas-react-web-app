@@ -27,7 +27,7 @@ function Kanbas() {
         setCourse({                                                 // Clear the course.
             _id: "0", name: "New Course", number: "New Number", semester: "New Semester",
             startDate: "2024-09-10", endDate: "2024-12-15",
-            image: "/blueBackground.jpg"
+            image: "/new.jpeg"
         });
     };
 
@@ -44,7 +44,7 @@ function Kanbas() {
         setCourse({                                                 // Clear the course.
             _id: "0", name: "New Course", number: "New Number", semester: "New Semester",
             startDate: "2024-09-10", endDate: "2024-12-15",
-            image: "/blueBackground.jpg"
+            image: "/new.jpeg"
         });
     };
 
