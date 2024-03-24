@@ -31,8 +31,8 @@ function ModuleList() {
                         <li><a className="dropdown-item" href="#"><FaCheckCircle className="wd-green-icon" /> Unpublish all modules and items</a></li>
                     </ul>
                 </div>
-                <button type="button" className="btn btn-light btn-outline-dark wd-module-plus mt-1"><FaPlus /> Module</button>
-                <button type="button" className="btn btn-light btn-outline-dark mt-1"><FaEllipsisV /></button>
+                <button type="button" className="btn btn-light btn-outline wd-module-plus mt-1"><FaPlus /> Module</button>
+                <button type="button" className="btn btn-light btn-outline mt-1"><FaEllipsisV /></button>
             </div>
             <hr/>
 

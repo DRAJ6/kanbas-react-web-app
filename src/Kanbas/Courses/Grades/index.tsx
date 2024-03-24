@@ -16,9 +16,9 @@ function Grades() {
 
     return (
         <div>
-            <button type="button" className="wd-float-right btn btn-light btn-outline-dark mt-1"><FaGear /></button>
-            <button type="button" className="wd-float-right btn btn-light btn-outline-dark me-2 mt-1"><FaFileImport /> Export</button>
-            <button type="button" className="wd-float-right btn btn-light btn-outline-dark me-2 mt-1"><FaFileExport /> Import</button>
+            <button type="button" className="wd-float-right btn btn-light btn-outline mt-1"><FaGear /></button>
+            <button type="button" className="wd-float-right btn btn-light btn-outline me-2 mt-1"><FaFileImport /> Export</button>
+            <button type="button" className="wd-float-right btn btn-light btn-outline me-2 mt-1"><FaFileExport /> Import</button>
             <div className="wd-float-done"></div>
 
             <div className="row">
@@ -57,7 +57,7 @@ function Grades() {
                 </div>
             </div>
 
-            <button className="btn btn-light btn-outline-dark mt-3 mb-3"><CiFilter /> Apply Filters</button>
+            <button className="btn btn-light btn-outline mt-3 mb-3"><CiFilter /> Apply Filters</button>
 
             <div className="table-responsive">
                 <table className="table table-striped table-bordered table-hover" aria-describedby="gradeTable">

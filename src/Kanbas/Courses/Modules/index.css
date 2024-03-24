@@ -7,9 +7,9 @@
 }
 
 .wd-module-plus {
-    background-color: red; 
-    color: white; 
-    border-color: red;
+    background-color: red;
+    color: white;
+    border-color: lightgray;
 }
 
 .wd-publish-all-btn {
@@ -48,4 +48,15 @@
 
 .wd-modules > li {
     margin-bottom: 20px;
+}
+
+
+.btn-custom-blue {
+    background-color: orange;
+    border-color: black;
+}
+
+.btn-custom-red {
+    background-color: grey;
+    border-color: black;
 }

@@ -50,9 +50,9 @@ function Assignments() {
                 </div>
 
                 <div className="float-end">
-                    <button type="button" className="btn btn-light btn-outline-dark"><FaPlus /> Group</button>
-                    <button type="button" className="btn btn-light btn-outline-dark wd-add-assignment" onClick={handleAddAssign} id="AddAssignmentBtn"><FaPlus /> Assignment</button>
-                    <button type="button" className="btn btn-light btn-outline-dark"><FaEllipsisV /></button>
+                    <button type="button" className="btn btn-light btn-outline"><FaPlus /> Group</button>
+                    <button type="button" className="btn btn-light btn-outline wd-add-assignment" onClick={handleAddAssign} id="AddAssignmentBtn"><FaPlus /> Assignment</button>
+                    <button type="button" className="btn btn-light btn-outline"><FaEllipsisV /></button>
                 </div>
                 <div className="wd-float-done"></div>
             </div>
@@ -64,7 +64,7 @@ function Assignments() {
                         <RxDragHandleDots2 className="me-2" />
                         <FaCaretDown style={{paddingRight: "5px"}} /> ASSIGNMENTS
                         <span className="float-end">
-                            <span className="wd-percentage-label">100% of Total</span>
+                            <span className="wd-percentage-label">98% of Total</span>
                             <FaCheckCircle className="text-success" />
                             <FaPlusCircle className="ms-2" onClick={handleAddAssign}  id="PlusAssignmentBtn" />
                             <FaEllipsisV className="ms-2" />
@@ -101,7 +101,8 @@ function Assignments() {
                                 <Link to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`} id="OpenAssignment">
                                     <b>{assignment.title}</b><br/>
                                     <span className="wd-week-span">{assignment.subtitle}  Module |</span><br/>
-                                    <span className="wd-week-span"><b>Due: </b>{assignment.dueDate} | {assignment.points} pts</span>
+                                    {/*<span className="wd-week-span"><b>Due: </b>{assignment.dueDate} | {assignment.points} pts</span>*/}
+                                    <span className="wd-week-span"><b>Due Date: </b>{assignment.dueDate} | <b>Assignment Points: </b> {assignment.points} pts</span>
                                 </Link>
                             </li>
                         ))}
