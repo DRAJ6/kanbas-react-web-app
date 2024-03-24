@@ -17,7 +17,7 @@ function Kanbas() {
     const [course, setCourse] = useState({                          // Create course state variable object.
         _id: "0", name: "New Course", number: "New Number", semester: "New Semester",
         startDate: "2024-09-10", endDate: "2024-12-15",
-        image: "/blueBackground.jpg"
+        image: "/new.jpeg"
     });
 
     const addNewCourse = () => {                                    // Event handler to add new course.
