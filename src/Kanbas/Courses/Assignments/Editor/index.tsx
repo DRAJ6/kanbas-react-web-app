@@ -14,7 +14,7 @@ function AssignmentEditor() {
     const assignmentList = useSelector((state: KanbasState) => state.assignmentsReducer.assignments);  // Retrieve current state variables modules and module from reducer.
     const assignment = useSelector((state: KanbasState) => state.assignmentsReducer.assignment);
     
-    const dispatch = useDispatch();             // Get dispatch to call reducer functions.
+    const dispatch = useDispatch();             // Get dispa tch to call reducer functions.
     const navigate = useNavigate();
     
     // If user is coming from clicking add assignment, set values to default values.
