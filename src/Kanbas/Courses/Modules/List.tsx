@@ -21,10 +21,10 @@ function ModuleList() {
     return (
         <>
             <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button type="button" className="btn btn-light btn-outline-dark mt-1">Collapse All</button>
-                <button type="button" className="btn btn-light btn-outline-dark mt-1">View Progress</button>
+                <button type="button" className="btn btn-light btn-outline-black mt-1">Collapse All</button>
+                <button type="button" className="btn btn-light btn-outline-black mt-1">View Progress</button>
                 <div className="btn-group">
-                    <button className="btn btn-light btn-outline-dark dropdown-toggle mt-1" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><FaRegCheckCircle className="wd-green-icon" /> Publish All</button>
+                    <button className="btn btn-light btn-outline dropdown-toggle mt-1" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><FaRegCheckCircle className="wd-green-icon" /> Publish All</button>
                     <ul className="dropdown-menu dropdown-menu-end wd-publish-all-btn" aria-labelledby="dropdownMenuButton2">
                         <li><a className="dropdown-item" href="#"><FaCheckCircle className="wd-green-icon" /> Publish all modules and items</a></li>
                         <li><a className="dropdown-item" href="#"><FaCheckCircle className="wd-green-icon" /> Publish modules only</a></li>

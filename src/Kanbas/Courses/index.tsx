@@ -21,14 +21,15 @@ function Courses({ courses }: { courses: any[]; }) {
     return (
         <>
             <Breadcrumb courses={courses}/>
-            <div className="row">
+            {/*<div className="row">*/}
+            <div className="row" style={{fontSize: "1.5rem"}}>
                 <CourseNavigation />
 
                 <div className="d-block d-md-none wd-0-lr-padding">
                     <BlackHeader/>
                 </div>
 
-                <div className="col-12 col-sm-12 col-md-11 col-lg-11 col-xl-11 col-xxl-11" style={{paddingLeft: "12vw", paddingRight: "12vw"}}>
+                <div className="col-12 col-sm-12 col-md-11 col-lg-11 col-xl-11 col-xxl-11" style={{fontSize: "1.2rem",paddingLeft: "10vw", paddingRight: "12vw"}}>
                     <Routes>
                         <Route path="/" element={<Navigate to="Home" />} />
                         <Route path="Home" element={<Home/>} />

@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+.card-body {
+  text-align: end !important;
+}
 
 .App-logo {
   height: 40vmin;
